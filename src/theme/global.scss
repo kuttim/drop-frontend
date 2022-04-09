@@ -1,6 +1,6 @@
 body {
   background: #0f0f22;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -11,7 +11,7 @@ body {
   .logo-text {
     font-size: 48px;
     color: white;
-    font-family: 'Send Flowers', cursive;
+    font-family: "Send Flowers", cursive;
   }
   .header-left {
     text-decoration: none;
@@ -23,7 +23,7 @@ body {
     gap: 75px; /* https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items */
     .nav-link {
       color: white;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 18px;
       text-decoration: none;
     }
@@ -39,7 +39,7 @@ body {
     font-size: 48px;
     font-weight: 600;
     color: white;
-    font-family: 'Send Flowers', cursive;
+    font-family: "Send Flowers", cursive;
   }
 }
 
