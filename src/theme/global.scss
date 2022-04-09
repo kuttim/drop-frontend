@@ -1,0 +1,31 @@
+body {
+    background: #0f0f22;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 3%;
+    .logo-text {
+        font-size: 48px;
+        color: white;
+        font-family: 'Send Flowers', cursive;
+    }
+    .header-left {
+        text-decoration: none;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-right: 30%;
+        gap: 75px; /* https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items */
+        .nav-link {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    }
+}

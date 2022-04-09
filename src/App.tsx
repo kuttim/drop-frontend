@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import Header from './components/Header/Header';
-import GlobalStyle from './theme/globalStyles';
+import './theme/global.scss';
 function App() {
   return (
     <Fragment>
-      <GlobalStyle />
       <Header />
     </Fragment>
   );
