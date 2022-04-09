@@ -1,31 +1,54 @@
 body {
-    background: #0f0f22;
-    font-family: 'Roboto', sans-serif;
+  background: #0f0f22;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-top: 3%;
+  .logo-text {
+    font-size: 48px;
+    color: white;
+    font-family: 'Send Flowers', cursive;
+  }
+  .header-left {
+    text-decoration: none;
+  }
+  .nav {
     display: flex;
-    justify-content: space-between;
-    margin-left: 20%;
-    margin-top: 3%;
-    .logo-text {
-        font-size: 48px;
-        color: white;
-        font-family: 'Send Flowers', cursive;
+    align-items: center;
+    margin-right: 30%;
+    gap: 75px; /* https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items */
+    .nav-link {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      text-decoration: none;
     }
-    .header-left {
-        text-decoration: none;
-    }
-    .nav {
-        display: flex;
-        align-items: center;
-        margin-right: 30%;
-        gap: 75px; /* https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items */
-        .nav-link {
-            color: white;
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            text-decoration: none;
-        }
-    }
+  }
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  align-items: center;
+  & .logo-text {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Send Flowers', cursive;
+  }
+}
+
+.hero-text {
+  display: flex;
+  padding: 30px;
+  margin-left: 2%;
+  justify-content: center;
+  color: #a9a9a9;
+  font-weight: 600;
+  font-size: 24px;
 }
