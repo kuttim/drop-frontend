@@ -1,7 +1,7 @@
 $bg-dark-mode: #0f0f22;
 $bg-light-mode: #ffffff;
 $dark-secondary-text: #a9a9a9;
-$white-text: #fffff;
+$white-text: #ffffff;
 
 html {
   --primaryBackgroundColor: #f5f8ff;
@@ -14,7 +14,7 @@ html.dark {
 }
 
 body {
-  background-color: var(--primaryBackgroundColor);
+  background: var(--primaryBackgroundColor);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -58,7 +58,6 @@ body {
     font-family: 'Send Flowers', cursive;
   }
 }
-
 .hero-text {
   display: flex;
   padding: 30px;
@@ -69,20 +68,27 @@ body {
   font-size: 24px;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: $bg-dark-mode;
+.link-section {
+  display: flex;
+  justify-content: center;
+  & input {
+    height: 45px;
+    width: 500px;
   }
-  .nav-link {
-    color: $white-text;
-  }
+}
 
-  @media (prefers-color-scheme: light) {
-    body {
-      background: $bg-light-mode;
-    }
-    .nav-link {
-      color: $dark-secondary-text;
-    }
-  }
+input[type='text'] {
+  border-radius: 4px;
+  padding-left: 15px;
+  color: $dark-secondary-text;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input[type='button'] {
+  padding-left: 15px;
+  color: pink;
+  width: 120px;
+  height: 52px;
+  border-radius: 8px;
 }
