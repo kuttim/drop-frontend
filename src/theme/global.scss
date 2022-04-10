@@ -1,18 +1,20 @@
 $bg-dark-mode: #0f0f22;
 $bg-light-mode: #ffffff;
-$white-text: #ffffff;
 $dark-secondary-text: #a9a9a9;
+$white-text: #fffff;
 
 html {
-  background-color: $bg-light-mode;
+  --primaryBackgroundColor: #f5f8ff;
+  --primaryTextColor: #0c0c24;
 }
 
 html.dark {
-  background-color: $bg-dark-mode;
+  --primaryBackgroundColor: #0f0f22;
+  --primaryTextColor: #ffffff;
 }
 
 body {
-  background: #0f0f22;
+  background-color: var(--primaryBackgroundColor);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,12 +24,13 @@ body {
   margin-left: 20%;
   margin-top: 3%;
   .logo-text {
+    color: var(--primaryTextColor);
     font-size: 48px;
-    color: $white-text;
     font-family: 'Send Flowers', cursive;
   }
   .header-left {
     text-decoration: none;
+    color: var(--primaryBackgroundColor);
   }
   .nav {
     display: flex;
@@ -36,6 +39,7 @@ body {
     gap: 75px; /* https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items */
     .nav-link {
       font-family: 'Roboto', sans-serif;
+      color: var(--primaryTextColor);
       font-size: 18px;
       text-decoration: none;
     }
@@ -47,10 +51,10 @@ body {
   justify-content: center;
   padding-top: 150px;
   align-items: center;
+  color: var(--primaryTextColor);
   & .logo-text {
     font-size: 48px;
     font-weight: 600;
-    color: $white-text;
     font-family: 'Send Flowers', cursive;
   }
 }

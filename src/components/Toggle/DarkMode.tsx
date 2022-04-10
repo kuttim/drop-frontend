@@ -22,6 +22,8 @@ export const ThemeToggle = () => {
       document.documentElement.classList.remove(darkModeClass);
     }
   }, [darkMode]);
+
+  console.log(darkMode);
   return (
     <Toggle
       className="DarkToggle"
