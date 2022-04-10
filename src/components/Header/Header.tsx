@@ -1,4 +1,4 @@
-import { WiMoonAltFirstQuarter } from "react-icons/wi";
+import ThemeToggle from '../Toggle/DarkMode';
 function Header() {
   return (
     <div className="header">
@@ -6,11 +6,14 @@ function Header() {
         <span className="logo-text">Drop</span>
       </a>
       <nav className="nav">
-        <WiMoonAltFirstQuarter size="32" color="white" />
+        <ThemeToggle />
         <a className="nav-link" href="#">
           About
         </a>
-        <a className="nav-link" href="https://github.com/kuttim/drop-frontend">
+        <a
+          className="nav-link"
+          href="https://github.com/kuttim/drop-frontend"
+        >
           GitHub
         </a>
       </nav>
